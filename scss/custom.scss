@@ -1,0 +1,47 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+/*COLORES*/
+$color-h1: #E3C86F;
+$background-color-nav: #E3C86F;
+$color-texto: white;
+$color-texto-menu-hover: black;
+$background-color-categorias: #E3C86F;
+
+header{
+    h1{
+        color: $color-h1;
+    }
+}
+nav{
+    background-color: $background-color-nav;
+    .menu{
+        a{
+            color: $color-texto;
+            &:hover{
+                color: $color-texto-menu-hover;
+            }
+        }
+    }
+}
+#categorias {
+    background-color: $background-color-nav;
+    a{
+        color: $color-texto;
+    }
+}
+
+/*ESTILOS TEXTOS ENLACES*/
+$text-decoration-enlaces: none;
+
+body{
+    a{
+        text-decoration: $text-decoration-enlaces;
+    }
+}
